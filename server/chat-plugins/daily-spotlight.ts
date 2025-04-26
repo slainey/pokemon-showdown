@@ -135,6 +135,11 @@ export const pages: Chat.PageTable = {
 					buf += `<tr><td>${i ? i : 'Current'}</td><td>${html}</td></tr>`;
 					if (!user.can('announce', null, room)) break;
 				}
+				// Button that removes daily in popup window
+				if (user.can('announce', null, room)) {
+					buf += `<tr><td colspan="2"><button class="button" name="send" value="/msgroom ${room.roomid},/removedaily ` +
+					`${key}">Delete daily</button></td></tr>`;
+				}
 				buf += '</table>';
 			}
 		}
