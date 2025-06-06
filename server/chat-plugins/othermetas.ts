@@ -76,6 +76,9 @@ export const commands: Chat.ChatCommands = {
 	othermetashelp: [
 		`/om - Provides links to information on the Other Metagames.`,
 		`!om - Show everyone that information. Requires: + % @ # ~`,
+		`/om all - Provides linkts to information on all ladderable Other Metagames.`,
+		`/om month - Provides links to information on Other Metagames of the month.`,
+		`!om month - Provides links to information on Other Metagames of the month. Requires: + % @ # ~`,
 	],
 
 	mnm: 'mixandmega',
